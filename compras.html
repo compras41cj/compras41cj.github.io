@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Compras</title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/me-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/me-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/me-progreso.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <me-nav></me-nav>
+  <header>
+    <h1>Compras</h1>
+    <div class="herramientas">
+      <a
+        href="comprasNuevas.html">
+        Agregar…</a>
+    </div>
+  </header>
+  <ul id="lista" class="lista">
+    <li>
+      <me-progreso>
+      </me-progreso>
+    </li>
+  </ul>
+  <me-footer></me-footer>
+  <script type="module"
+    src="js/CtrlCompras.js">
+    </script>
+</body>
+</html>
+

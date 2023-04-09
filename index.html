@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Sesión</title>
+
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
+    </script>
+  
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
+    </script>
+
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
+    </script>
+  
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/me-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/me-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/me-progreso.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+ <form name="forma">
+    <me-nav>
+        <a class="nav-facebook" href="">Iniciar Sesion con facebook</a>
+    </me-nav>
+    <header>
+      <h1>Sesión</h1>
+      <div class="herramientas">
+        <button
+          type="button"
+          name="terminarSesión">
+          Terminar Sesión
+        </button>
+      </div>
+    </header>
+    <figure>
+      <img id="avatar" src=""
+        alt="Avatar">
+    </figure>
+    <p>
+      <label>
+        Email
+        <output name="email">
+          <me-progreso>
+          </me-progreso>
+        </output>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <output name="nombre">
+          <me-progreso>
+          </me-progreso>
+        </output>
+      </label>
+    </p>
+    <me-footer></me-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlIniciarSesion.js">
+    </script>
+</body>
+</html>
