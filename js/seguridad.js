@@ -5,16 +5,6 @@ import { getAuth,
     muestraError
   } from "../import/util.js";
 
-  const facebookButton = document.querySelector('#logingFacebook')
-    facebookButton.addEventListener('click', e => {
-      e.preventDefault();
-      new firebase.auth.FacebookAuthProvider();
-      auth.singInthPopup(provider)
-      .then(result => {
-        console.log(result);
-        console.log('Facebook sing in')
-      })
-    })
   
   const firestore = getFirestore();
   const daoUsuario = firestore.
