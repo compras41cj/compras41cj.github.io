@@ -15,6 +15,18 @@ import {
   const avatar = document.
     querySelector("#avatar");
 
+    // Login with Facebook
+    
+    const facebookButton = document.querySelector('#logingFacebook')
+    facebookButton.addEventListener('click', e => {
+      e.preventDefault();
+     const provider = new firebase.auth.FacebookAuthProvider();
+      auth.singInthPopup(provider)
+      .then(result => {
+        console.log(result);
+        console.log('Facebook sing in')
+      })
+    })
   
   /* Escucha cambios de usuario.
    * El primer parámetro es una
