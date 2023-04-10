@@ -8,9 +8,6 @@ import {
     iniciaSesión,
     terminaSesión
   } from "./seguridad.js";
-
-  firebase.initializeAp(firebaseConfig);
-  const auth = firebase.auth();
   
   /** @type {HTMLFormElement} */
   const forma = document["forma"];
@@ -60,16 +57,4 @@ import {
     }
   }
   
-   // Login with Facebook
-    
-   const facebookButton = document.querySelector('#logingFacebook')
-   facebookButton.addEventListener('click', e => {
-     e.preventDefault();
-    const provider = new firebase.auth.FacebookAuthProvider();
-     auth.singInthPopup(provider)
-     .then(result => {
-       console.log(result);
-       console.log('Facebook sing in')
-     })
-   })
 
